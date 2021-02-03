@@ -1,8 +1,8 @@
 package library
 
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
+ import org.junit.Assert._
 
+import org.junit.Test
 
 class HtmlTest {
   @Test def getText_Text(): Unit = assertEquals("a", Text("a").getText)
