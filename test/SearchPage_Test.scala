@@ -7,11 +7,9 @@ import SearchPage._
 
 class SearchPage_Test {
 
-  var s = "https://search.vivastreet.com/annonces/fr?lb=new&search=1&start_field=1&keywords="
-
   @Test
   def test_Vide {
-    assertEquals(s, extractKeywordsAnd(List()))
+    assertEquals("https://search.vivastreet.com/annonces/fr?lb=new&search=1&start_field=1&keywords=", extractKeywordsAnd(List()))
   }
 
   @Test
